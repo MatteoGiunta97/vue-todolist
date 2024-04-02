@@ -31,6 +31,7 @@ const { createApp } = Vue;
 createApp({
     data(){
         return {
+            newTask: '',
             toDo: [
                 'Fare i compiti',
                 'Fare la Spesa',
@@ -41,6 +42,13 @@ createApp({
     methods: {
         deleteTask(index) {
             this.toDo.splice(index, 1);
+        }
+        ,
+        addTask(newTask) {
+            if(newTask.length > 0) {
+                this.toDo.push(newTask);
+                this.newTask = '';
+            }
         }
     }
 }).mount('#app');
