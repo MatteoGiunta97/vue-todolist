@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .logo {
+    text-align: center;
+    padding: 20px 0;
+}
+header .logo img {
+    width: 300px;
+}
+
+.user-inputs {
+    text-align: center;
+}
+.user-inputs input,
+.user-inputs button
+ {
+    padding: 10px 20px;
+}
+
+.to-do {
+    width: 70%;
+    margin: 20px auto;
+    background-color: lightgray;
+}
+.task {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+.delete {
+    cursor: pointer;
+}
