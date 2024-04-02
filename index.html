@@ -24,10 +24,10 @@
                 <button>Aggiungi</button>
             </div>
 
-            <div v-for="eachTask in toDo" class="to-do">
+            <div v-for="eachTask, index in toDo" class="to-do">
                 <div class="task">
                     <span>{{ eachTask }}</span>
-                    <span class="delete"><i class="fa-solid fa-xmark"></i></span>
+                    <span class="delete" @click="deleteTask(index)"><i class="fa-solid fa-xmark"></i></span>
                 </div>
             </div>
         </main>

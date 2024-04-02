@@ -38,5 +38,9 @@ createApp({
             ]
         };
     },
-    methods: {}
+    methods: {
+        deleteTask(index) {
+            this.toDo.splice(index, 1);
+        }
+    }
 }).mount('#app');
